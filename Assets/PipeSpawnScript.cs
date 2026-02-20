@@ -8,7 +8,7 @@ public class PipeSpawnScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        SpawnPipe();
     }
 
     // Update is called once per frame
@@ -18,6 +18,18 @@ public class PipeSpawnScript : MonoBehaviour
         {
            timer += Time.deltaTime;
         }
-        Instantiate(pipe,transform.position, transform.rotation);
+        else
+        {
+            
+            timer = 0f;
+            SpawnPipe();
+        }
+        
+    }
+    void SpawnPipe()
+    {
+
+        Instantiate(pipe, new Vector3(transform.position.x, Random.Range(-1, 5), 0), transform.rotation);
+        
     }
 }
