@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 774983612}
   m_Layer: 0
   m_Name: Logic Manager
-  m_TagString: Untagged
+  m_TagString: Logic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 1624669562}
   - component: {fileID: 1624669566}
   - component: {fileID: 1624669567}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,7 +848,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   pipe: {fileID: 8366287731859845674, guid: e005f02635ac57b429a5e80908a2bb79, type: 3}
   spawnRate: 2
-  heightOffset: 10
 --- !u!4 &2002124207
 Transform:
   m_ObjectHideFlags: 0
